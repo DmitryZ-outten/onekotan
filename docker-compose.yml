@@ -1,0 +1,9 @@
+version: "2.4"
+services:
+
+ onekotan:
+   image: registry.gitlab.com/dmyz/onekotan:latest
+   tty: true
+   volumes:
+     - ./ansible:/ansible 
+     - /var/run/docker.sock:/var/run/docker.sock
